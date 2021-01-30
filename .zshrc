@@ -1,7 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/dez/.oh-my-zsh"
 
@@ -83,6 +82,10 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
+# SPACESHIP CONFIG
+# SPACESHIP_CHAR_SYMBOL="💀 "
+# SPACESHIP_CHAR_SYMBOL_ROOT="🔱 "
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -101,6 +104,10 @@ export LC_ALL=en_GB.UTF-8
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
+# Set environmental variables
+source ~/.environment
+source ~/.environment-private
+
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
@@ -109,6 +116,8 @@ export LC_ALL=en_GB.UTF-8
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+source ~/.aliases
+source ~/.aliases-private
 alias createGif='source ~/.scripts/createGif.sh'
 alias vim="/usr/local/bin/vim"
 
