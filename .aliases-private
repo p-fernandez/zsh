@@ -1,0 +1,1 @@
+alias squarefern="ssh $USER_D@$HOST_D"
