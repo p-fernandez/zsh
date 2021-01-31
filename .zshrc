@@ -76,15 +76,12 @@ plugins=(
   jsontools
   safe-paste
   urltools
-  zsh-autosuggestions
+  #zsh-autosuggestions
+  zsh-nvm
   zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
-
-# SPACESHIP CONFIG
-# SPACESHIP_CHAR_SYMBOL="💀 "
-# SPACESHIP_CHAR_SYMBOL_ROOT="🔱 "
 
 # User configuration
 
@@ -92,7 +89,6 @@ source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
-export LC_ALL=en_GB.UTF-8
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -104,9 +100,6 @@ export LC_ALL=en_GB.UTF-8
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-# Set environmental variables
-source ~/.environment
-source ~/.environment-private
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -116,10 +109,13 @@ source ~/.environment-private
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# Set environmental variables
+source ~/.environment
+source ~/.environment-private
+
 source ~/.aliases
 source ~/.aliases-private
-alias createGif='source ~/.scripts/createGif.sh'
-alias vim="/usr/local/bin/vim"
 
 [[ "$TERM" == "xterm" ]] && export TERM=xterm-256color
 
