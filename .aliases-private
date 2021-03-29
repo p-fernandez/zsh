@@ -1,1 +1,2 @@
 alias squarefern="ssh $USER_D@$HOST_D"
+alias Ag-all="Ag -U --hidden"
