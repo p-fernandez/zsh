@@ -1,6 +1,6 @@
 alias check-if-port-is-used="sh ~/.scripts/check-if-port-is-used.sh"
 alias create-gif-from-video="source ~/.scripts/createGif.sh"
+alias flac-to-mp3="sh ~/.scripts/flac-to-mp3.sh"
 alias see-you="sh ~/.scripts/seeyouspacecowboy.sh; sleep 2"
-alias vim="/usr/local/bin/vim"
 alias zsh-reload="source ~/.zshrc"
 alias zsh-time="sh ~/.scripts/time-zsh.sh"
